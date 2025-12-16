@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas Académicas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Gestor de Tareas</h1>
+        <p>Organiza tus tareas académicas sin morir en el intento</p>
+    </header>
+
+    <main class="container">
+
+        <section class="form-section">
+            <h2>Nueva Tarea</h2>
+
+            <form id="taskForm">
+                <input type="date" id="fecha" required>
+
+                <input type="text" id="materia" placeholder="Materia" required>
+
+                <select id="prioridad" required>
+                    <option value="">Prioridad</option>
+                    <option value="Baja">Baja</option>
+                    <option value="Media">Media</option>
+                    <option value="Alta">Alta</option>
+                </select>
+
+                <input type="text" id="titulo" placeholder="Título de la tarea" required>
+
+                <textarea id="descripcion" placeholder="Descripción detallada" required></textarea>
+
+                <button type="submit">Guardar tarea</button>
+            </form>
+        </section>
+
+        <section class="tasks-section">
+    <h2>Tareas Registradas</h2>
+
+    <select id="filtroPrioridad">
+        <option value="Todas">Todas las prioridades</option>
+        <option value="Baja">Baja</option>
+        <option value="Media">Media</option>
+        <option value="Alta">Alta</option>
+    </select>
+
+    <div id="tasksContainer" class="tasks-grid"></div>
+</section>
+
+
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
