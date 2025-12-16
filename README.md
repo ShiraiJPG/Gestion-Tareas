@@ -47,4 +47,4 @@ Las tareas se almacenan internamente como un arreglo de objetos en formato JSON:
   "estado": "Pendiente"
 }
 
-https://github.com/ShiraiJPG/Gestion-Tareas.git
+https://shiraijpg.github.io/Gestion-Tareas/
